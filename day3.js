@@ -1,5 +1,5 @@
 //conditional in javascript
-const isRaining = true;
+const isRaining = false;
 if (isRaining) {
   console.log("Carry Umbrella.");
 } else {
@@ -20,5 +20,13 @@ console.log(result);
 
 //syntax= condition ? trueExpression : falseExpression
 //short circuit evaluation
-const eg = isRaining && "CARRY UMBRELLA.";
+const eg = isRaining && "CARRY UMBRELLA." || "DONT CARRY"
 console.log(eg);
+let isLoggedIn = true;
+const name = isLoggedIn && "Authenticated!"
+console.log(name)
+
+//nullish coelescing operator 
+let age = null;
+let output = age ?? "No Age";
+console.log(output)
